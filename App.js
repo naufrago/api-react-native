@@ -10,13 +10,22 @@ import {
 } from 'react-native';
 import Texto from './components/componentesBasicos/Texto';
 import Imagenes from './components/componentesBasicos/Imagenes';
+import TextInput from './components/componentesBasicos/TextInput';
+import Boton from './components/userInterface/Boton';
 
-export default  function App(){
- 
-  return(
+export default function App() {
+
+  return (
     <>
-      <Texto/>
-      <Imagenes/>
+      <SafeAreaView>
+        <ScrollView>
+          <Texto />
+          <Imagenes />
+          <TextInput/>
+          <Boton/>
+        </ScrollView>
+      </SafeAreaView>
+
     </>
   )
 };
